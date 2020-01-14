@@ -1,0 +1,53 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "gcc build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "/home/xujan/test_ethash_siphash_1_2/keccak.c",
+                "/home/xujan/test_ethash_siphash_1_2/keccakf800.c",
+                "/home/xujan/test_ethash_siphash_1_2/keccakf1600.c",
+                "/home/xujan/test_ethash_siphash_1_2/primes.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/whirlpool.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/tiger.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/blake.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/bmw.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/cubehash.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/echo.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/fugue.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/groestl.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/hamsi.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/jh.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/keccak.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/luffa.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/shabal.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/shavite.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/simd.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/skein.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/sph_sha2.c",
+                "/home/xujan/test_ethash_siphash_1_2/sha3/sph_sha512.c",
+                "/home/xujan/test_ethash_siphash_1_2/siphash/siphash.c",
+                "/home/xujan/test_ethash_siphash_1_2/test_ethash_my.cpp",
+                "/home/xujan/test_ethash_siphash_1_2/ethash.cpp",
+                "-o",
+                "/home/xujan/test_ethash_siphash_1_2/test_ethash_siphash_1_2",
+                "-lstdc++"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
